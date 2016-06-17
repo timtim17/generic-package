@@ -1,4 +1,4 @@
-# generic-packager
+# generic-package
 A wrapper class to store a generic Java Object and its original type.
 
 # Usage
