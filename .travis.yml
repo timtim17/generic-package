@@ -4,3 +4,12 @@ jdk:
   - oraclejdk8
   - oraclejdk7
 script: ./gradlew build
+before_deploy: ./gradlew generatePomFileForMyPublicationPublication generateBintrayFile
+deploy:
+  skip_cleanup: true
+  provider: bintray
+  file: "build.bintray.json"
+  user: "timtim17"
+  dry-run: false
+  on:
+    - "master"
