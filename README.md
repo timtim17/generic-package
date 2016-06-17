@@ -1,7 +1,7 @@
 # generic-package
 A wrapper class to store a generic Java Object and its original type.
 
-# Usage
+## Usage
 An `List` in Java holds one type of Object. But, what if you want to hold more than one type of object? Well, you could make an `List<Object>`, but then getting an object would only return a generic `Object`. You'd then have to somehow determine what type of object it should be casted to.
 
 ```java
