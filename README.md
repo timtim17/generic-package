@@ -5,7 +5,7 @@ A wrapper class to store a generic Java Object and its original type.
 An `List` in Java holds one type of Object. But, what if you want to hold more than one type of object? Well, you could make an `List<Object>`, but then getting an object would only return a generic `Object`. You'd then have to somehow determine what type of object it should be casted to.
 
 ```java
-List<Object> list = new ArrayList<Object>();
+List<Object> list = new ArrayList<>();
 list.add("Test");
 list.add(new Integer(5));
 
@@ -19,13 +19,13 @@ for (Object o : list) {
 Instead, `Package` is basically a wrapper for `Object`. It stores both its value as an `Object` and what type it should be casted to, as well as a method to convert it back.
 
 ```java
-List<Package> list = new ArrayList<Package>();
-list.add(new Package("Test", String.class));
-list.add(new Package(new Integer(5), Integer.class));
+List<Package<?>> list = new ArrayList<>();
+list.add(new Package("Test"));
+list.add(new Package(new Integer(5)));
 
 // ...
 
-String test = list.get(0).unpack();
+String test = list.get(0).getValue();
 ```
 
 ## Practicality
