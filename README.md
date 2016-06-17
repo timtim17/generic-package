@@ -1,4 +1,4 @@
-# generic-package
+# generic-package [![Build Status](https://travis-ci.org/timtim17/generic-package.svg?branch=master)](https://travis-ci.org/timtim17/generic-package)
 A wrapper class to store a generic Java Object and its original type.
 
 ## Usage
