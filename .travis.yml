@@ -3,13 +3,6 @@ install: true
 jdk:
   - oraclejdk8
   - oraclejdk7
-before_cache:
-  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
 script: ./gradlew build
 before_deploy: ./gradlew generatePomFileForMyPublicationPublication generateBintrayFile
 deploy:
@@ -23,3 +16,10 @@ deploy:
     jdk: oraclejdk8
   key:
     secure: oV62kvMFyOsssfdfMCfZdH1WBqFqJLlNndO3GirSRXV0/VF2aa12nL/ybKak7OaOlZxdL/fir4O+aIU/tn9BzT75FEXr048cJO0L31MO68QM3HO+ggQjR9Acgn0Lzf1en7uz9/SL0ZZTTTRRTyFHPdtpLyQAG86XpLcTHJXThYA8njYEc0dHsqk+PO4JI2Wms9T+ASDMZbyKyQflgMjs0FwaEtZL9/9FVE0zTy2B1TQ1slowKyJkTVb21qtalEe9znR+EYb7ptnoCCIZNBjqOhLeYtBtABQkcK2/OqowHAzaxw+1tA0Vx8RPkmH36o9TLo/xhUo9qPOLGdl2W4Hcoz7HOCuzEWyWrPMXoo4C4Dm0MFs9zXzAljBiQHUVzCaY10TvbKFkhEi0P4T4qC21Xg+qt6v4VoSuT5pCPLBiVnBHH1SZfVIhG/hQA5oQpn3rDXfKEKG3fLrl7/VpDJEqWQ2FyhpjFGDVA+PI+KUq6RDz8ufYUJm8hYMwg96HeanTGR2rTTGPbpkhm3It12/pddKZFT83G4hmmwKgjnOuIQ8OaqvfDXhrenXhJl/7vBNRhNJEmbKpkKnjTI/3D70pcqU8T7nnROBu6kGywvReTnayyWgcD+OoFE1DYZza53O0yjUWf8S5DN4kzDVqmsb/yUV9K+Jt7AilVvwp6QEKwBs=
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
