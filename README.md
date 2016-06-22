@@ -1,4 +1,4 @@
-# generic-package [![Build Status](https://travis-ci.org/timtim17/generic-package.svg?branch=master)](https://travis-ci.org/timtim17/generic-package)
+# generic-package [![Build Status](https://travis-ci.org/timtim17/generic-package.svg?branch=master)](https://travis-ci.org/timtim17/generic-package) [![Download](https://api.bintray.com/packages/timtim17/maven/generic-package/images/download.svg)](https://bintray.com/timtim17/maven/generic-package/_latestVersion)
 A wrapper class to store a generic Java Object and its original type.
 
 ## Usage
