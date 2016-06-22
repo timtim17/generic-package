@@ -10,7 +10,7 @@ deploy:
   provider: bintray
   file: build/bintray.json
   user: timtim17
-  dry-run: true
+  dry-run: false
   on:
     branch: master
     jdk: oraclejdk8
