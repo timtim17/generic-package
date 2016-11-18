@@ -29,4 +29,4 @@ String test = list.get(0).getValue();
 ```
 
 ## Practicality
-In the real world, this scullion isn't very practical. There are other, better ways built into Java that can solve this issue, and this solution isn't that well thought out either. This is just a random idea that I came up with when I was bored and decided to implement for practice.
+In the real world, this solution isn't very practical. There are other, better ways built into Java that can solve this issue, and this solution isn't that well thought out either. This is just a random idea that I came up with when I was bored and decided to implement for practice.
